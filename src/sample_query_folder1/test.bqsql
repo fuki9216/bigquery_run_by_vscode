@@ -1,0 +1,8 @@
+/*
+このクエリの説明を記述する場所
+*/
+SELECT
+    distinct dt as date
+FROM `tokubai-data.figlog_poc.bargain_pv_raw`
+WHERE
+    dt between '2024-01-01' and '2024-01-02'
