@@ -1,36 +1,16 @@
 {
     "[sql]": {
-        "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+        "editor.formatOnSave": true
     },
-    "Prettier-SQL.commaPosition": "after", // SELECTおよびGROUP BY句のコンマを配置する位置
-    "Prettier-SQL.denseOperators": false, // +や>=などの演算子周りの空白を削除するかどうか
-    "Prettier-SQL.ignoreTabSettings": true, // VSCodeのユーザー/ワークスペース設定のtabSizeやinsertSpacesを無視するかどうか
-    "Prettier-SQL.expressionWidth": 150, // 行を折り返す前に許容される各行の文字数
-    "Prettier-SQL.indentStyle": "standard", // 標準のキーワード配置と中央のスペース列を維持するスタイルの切り替え
-    "Prettier-SQL.insertSpacesOverride": true, // Prettier-SQL.ignoreTabSettingsが有効な場合にinsertSpacesを上書きする
-    "Prettier-SQL.keywordCase": "upper", // キーワードをすべて大文字または小文字で表示するかどうか preserve, upper, lower
-    "Prettier-SQL.linesBetweenQueries": 1, // 各クエリ/ステートメントの間に置く改行の数
-    "Prettier-SQL.logicalOperatorNewline": "before", // ANDやORの前後で改行するかどうか
-    "Prettier-SQL.newlineBeforeSemicolon": false, // セミコロンを独自の行に配置するか、前の行に配置するか
-    "Prettier-SQL.SQLFlavourOverride": "sql", // SQLファイルをフォーマットするためのカスタムSQLフレーバーを使用する。Microsoft PostgreSQLやMSSQLの拡張機能を使用する場合は、VSCode用に新しい言語IDを提供しないためこれを使用。
-    "Prettier-SQL.tabSizeOverride": 2, // Prettier-SQL.ignoreTabSettingsが有効な場合にtabSizeを上書きする
-    "Prettier-SQL.tabulateAlias": false, // SELECT句内の最も長い行にエイリアスを右揃えするかどうか
-    "Prettier-SQL.alignLogicalOperators": false, // ANDやORの前後で改行するかどうか
-    "Prettier-SQL.breakBeforeBooleanOperator": true, // ブール演算子の前で改行するかどうか
-    "Prettier-SQL.breakBeforeLogicalOperator": true, // 論理演算子の前で改行するかどうか
-    "Prettier-SQL.breakBeforeSelect": true, // SELECTキーワードの前で改行するかどうか
-    "Prettier-SQL.breakAfterSelect": true, // SELECTキーワードの後で改行するかどうか
-    "Prettier-SQL.breakBeforeWhere": true, // WHEREキーワードの前で改行するかどうか
-    "Prettier-SQL.breakBeforeFrom": true, // FROMキーワードの前で改行するかどうか
-    "Prettier-SQL.breakBeforeJoin": false, // JOINキーワードの前で改行するかどうか
-    "Prettier-SQL.breakBeforeGroupBy": true, // GROUP BYキーワードの前で改行するかどうか
-    "Prettier-SQL.breakBeforeOrderBy": true, // ORDER BY句の前で改行するかどうか
-    "Prettier-SQL.breakBeforeHaving": true, // HAVING句の前で改行するかどうか
-    "Prettier-SQL.breakBeforeUnion": true, // UNION句の前で改行するかどうか
-    "bigqueryRunner.projectId": "project-id", // BigQueryプロジェクトIDを指定します
+    "sqlfluff.config": ".sqlfluff",
+    "sqlfluff.executablePath": ".venv/bin/sqlfluff",
+    "sqlfluff.dialect": "bigquery",
     "files.associations": {
         "*.bqsql": "sql-bigquery"
     },
+    // プロジェクトIDを指定する
+    "bigqueryRunner.projectId": "プロジェクトID",
     "material-icon-theme.files.associations": {
         "*.bqsql": "database"
     }

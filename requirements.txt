@@ -1,0 +1,14 @@
+# 設定モジュール
+sqlfluff
+google-cloud-bigquery 
+pandas 
+pydata-google-auth 
+bigquery-magics 
+google-cloud-bigquery-storage 
+# データ分析モジュール
+matplotlib
+japanize-matplotlib 
+pandas 
+seaborn 
+numpy
+scikit-learn
